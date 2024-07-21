@@ -1,38 +1,358 @@
-.App {
-  text-align: center;
+/*Header*/
+
+.searchbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchbar input {
+    border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Serchicon {
+    font-size: 25px;
+    background-color: lavender;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.admin {
+    display: flex;
+    flex-direction: row;
+
 }
 
-.App-link {
-  color: #61dafb;
+.sideBar {
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 20vw;
+    height: 80vh;
+
+    background-color: #121;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar ul li {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #808080;
+    display: block;
+}
+
+.sideBar li:hover {
+    color: #f1f1f1;
+    background-color: cadetblue;
+}
+
+.sideBar a {
+    text-decoration: none;
+}
+
+.ca {
+    width: 230px;
+    background-color: #818181;
+    color: cyan;
+}
+
+.mainsection {
+
+    width: 1200px;
+    border: 1px solid red;
+
+}
+
+
+div.ex1 {
+    background-color: ghostwhite;
+    height: 80vh;
+    width: 1050px;
+    overflow-y: scroll;
+}
+
+.displayEachImage {
+    position: absolute;
+    margin: auto;
+    top: 100px;
+    background-color: antiquewhite;
+    width: 350px;
+    left: 400px
+}
+
+.displayEachImage img {
+    width: 300px;
+    align-items: center;
+
+
+}
+
+.closeIcon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: red;
+    font-size: 25px;
+
+}
+
+.addImage {
+    position: relative
+}
+
+.addButton {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: block;
+}
+
+.addButton:hover {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+
+}
+
+.productImag {
+    height: 120px;
+    background-color: gainsboro;
+    position: relative;
+
+}
+
+.editIcon {
+    font-size: 25px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+
+
+}
+
+.deleteIcon {
+    font-size: 25px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+
+
+}
+
+.editIcon:hover {
+    background-color: green;
+    border-radius: 15px;
+
+}
+
+.changeProductSection {
+    width: 1000px;
+}
+
+.HomeMainSection {
+
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+
+
+.Banergap {
+    height: 10px;
+}
+
+.BannerMainSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 130px;
+    border-radius: 20px;
+
+}
+
+.BannerEachItem {
+    padding-left: 80px;
+
+}
+
+.BannerImage {
+    width: 64px;
+    height: 64px;
+}
+
+.BannerCategoryLable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BannerArrowIcon :hover {
+
+    display: none;
+
+}
+
+.mobileHeadings {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 36px;
+
+}
+
+.mobileImagDev img {
+    height: 300px;
+    width: 100vw;
+    object-fit: cover;
+    image-resolution: 100%;
+}
+
+.carousel-container {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carddiv {
+    margin-top: 10px;
+    background-color: white;
+    position: relative;
+
+
+}
+
+.cardMain {
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
+
+.iconLeft {
+    font-size: 30px;
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+    left: 10px;
+    transform: translate(-50%, -50%);
+
+}
+
+.iconRight {
+    position: absolute;
+    top: 180px;
+    font-size: 30px;
+    transform: translate(-25%, -25%);
+
+    z-index: 2;
+    right: 0px;
+}
+
+
+
+
+
+.DetailItemMainSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.DetailImageContainer {
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+}
+
+.DetailBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+
+    background-color: #f1f1f1;
+
+}
+
+.ZoomImage {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    right: -700px;
+
+
+}
+
+.productDetails h2 {
+
+    font-weight: 800;
+}
+
+.productDetails {
+    padding-left: 60px;
+    padding-top: 50px;
+    width: 750px;
+    height: 500px;
+
+}
+
+.price {
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.priceHeading {
+    font-size: 18px;
+    font-weight: 800px;
+}
+
+.Description h1 {
+    font-size: 25px;
+    font-weight: 500px;
+}
+
+.ButtonsDetail {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productHeading {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.verticaldev {
+    margin-top: 10px;
+    background-color: white;
+    position: relative;
+    width: 50%;
+
+
 }
